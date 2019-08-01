@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Barlow|IBM+Plex+Mono|Inconsolata|Roboto+Mono&display=swap");
+
+html {
+    height: 100%;
+}
+
+/* TEXT FORMATTING */
+body {
+    height: 100%;
+    font-family: 'Abel', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    color: #252525;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3.333em;
+    margin: 0 auto;
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 0.125em;
+    padding: 0.8335em;
+}
+
+h1 {
+    font-size: 2em;
+    display: inline-block;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2em;
+    color: #252525;
+    text-align: center;
+    border-bottom: .08em #f2f2f2 solid;
+    margin-bottom: 0.8333em;
+}
+
+h3 {
+    font-size: 1.667em;
+    text-align: center;
+    padding-bottom: 1.667em;
+    padding-top: 2.5em;
+}
+
+
+
+
+/* PARAGRAPHS */
+p {
+    font-size: 1em;
+    line-height: 2.083em;
+    color: #252525;
+    padding: 0.833em 2.5em;
+}
+
+
+/* DIVS */
+
+div {
+    padding: 0 2.5em;
+}
+
+
+
+/* NAVIGATION */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing: normal;
+    font-size: 1em;
+    letter-spacing: 0.125em;
+    background-color: #252525;
+}
+
+ul.topnav li a:hover:not(.active) {
+    color: #307B8C;
+}
+
+ul.topnav li.right {
+
+    float: right;
+    padding-top: 2.5em;
+    padding-right: 2.5em;
+
+}
+
+/* HEADER */
+header {
+    background-color: #252525;
+    padding-top: 0.833em;
+    padding-bottom: 1.667em;
+    opacity: .7;
+    border-bottom-style: solid;
+    border-bottom-width: .333em;
+    border-bottom-color: #ffffff;
+    position: sticky;
+    top: 0;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* MAIN */
+main {
+    background-color: #ffffff;
+}
+
+main ul {
+    color: #252525;
+    font-size: 1em;
+    list-style-type: square;
+    list-style-position: inside;
+    letter-spacing: 0.167em;
+    line-height: 2.083em;
+    padding-top: 1.667em;
+    padding-bottom: 1.667em;
+
+}
+
+main ul li {
+    padding-left: 4.167em;
+}
+
+main ul li a {
+    text-decoration: none;
+    color: #307B8C;
+}
+
+main ul li a:hover {
+    color: #c4c4c4;
+}
+
+/*FOOTER*/
+.footer {
+    font-size: 1em;
+    color: lightgray;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding-top: 3.333em;
+    padding-bottom: 3.333em;
+    margin-top: -3.333em;
+    clear: both;
+}
+
+/* TEXT SEPERATED INTO 2 COLUMNS AND TEXT/IMAGE COLUMNS */
+
+.hometext,
+.archmain,
+.archstyle,
+.rbtextp3,
+.textimagecolumn {
+    column-count: 2;
+    column-gap: 2em;
+    column-rule: .2em #f2f2f2 solid;
+    margin: 0 6%;
+}
+
+/* ARCHETECTURE OVERVIEW */
+.archoverview {
+    column-count: 3;
+    column-rule: .2em #f2f2f2 solid;
+    column-gap: 3%;
+}
+
+
+
+/* IMAGES */
+
+img {
+    padding: 4.167em 2.5em 4.167em 2.5em;
+}
+
+/* IMAGES CENTERED ABOVE TEXT IN BODY */
+.homepageimg,
+.archpageimg1,
+.archpageimg3 {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+/* IMAGES SPLIT INTO COLUMNS NEXT TO TEXT */
+.archpageimg2,
+.archpageimg4,
+.robinboydimg1,
+.robinboydimg2,
+.historyimg1,
+.historyimg2 {
+    width: 80%;
+
+}
+
+/* MEDIA QUERIES FOR DEVICES UNDER TABLE SIZE */
+@media screen and (max-width: 768px) {
+
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+
+    header {
+        position: static;
+    }
+
+
+    /*  MEDIA QUERY FOR MOBILE DEVICES */
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .hometext,
+    .archoverview,
+    .archmain,
+    .archstyle,
+    .rbtextp3,
+    .textimagecolumn {
+        column-count: 1;
+    }
+}
